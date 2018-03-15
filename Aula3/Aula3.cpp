@@ -85,17 +85,27 @@ int main(){
 
 #pragma endregion
 //
-#pragma region 6
-	//faça um programa que solicite um valor n ao usuario.demonstre os numeros primos que apareem ate n.
-
-	int n;
+#pragma region Exc 6
+	//Faça um programa que solicite um valor N ao usuario. Demontre os numeros primos que aparecem até N.
+	int n, c, acum = 0;
 	cin >> n;
-
-	for (int c; c < n; c++) {
-	c++;
+	for (c = 2; c <= n; c++) {
+		if (c == 2) {
+			cout << "Este numero é Primo:" << c << endl;
+		}
+		else if (n % 2 != 0) {
+			acum++;
+		}
+		else if (acum >= 1) { 
+			cout << "Este numero é Primo:" << c << endl;
+		}
+		
 	}
 
+
+
 #pragma endregion
+
 
 
 
