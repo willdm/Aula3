@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include <Windows.h>	
-#include <iostream>  //entrada e saida
+#include <iostream>  //entrada e saida a a
 #include <string>	//cadeia
 
 
