@@ -42,7 +42,7 @@ int main(){
 	//	cout << c << endl;
 	//}
 #pragma endregion
-//
+
 #pragma region Exc 4
 //	// Escreva um programa em que o usuario digita 10 valores e apresenta o maior e o menor dos valores digitados;
 //	int array[10];
@@ -65,7 +65,7 @@ int main(){
 //	cout << "Maior valor digitado é :" << maior_valor << endl;
 //
 #pragma endregion
-//
+
 #pragma region Exc 5
 	//Faça um programa em que o usuario digite um valor N. demonstre os resultados dos numeros pares  e impares que aparecem até N.
 	//int n, p,i;
@@ -84,27 +84,27 @@ int main(){
 	//}
 
 #pragma endregion
-//
+
 #pragma region Exc 6
 	//Faça um programa que solicite um valor N ao usuario. Demontre os numeros primos que aparecem até N.
-	int n, c, acum = 0;
-	cin >> n;
-	for (c = 2; c <= n; c++) {
-		if (c == 2) {
-			cout << "Este numero é Primo:" << c << endl;
-		}
-		else if (n % 2 != 0) {
-			acum++;
-		}
-		else if (acum >= 1) { 
-			cout << "Este numero é Primo:" << c << endl;
-		}
-		
-	}
+	int numeroInicio, numeroFinal, a, b, c, d;
+		cin >> numeroFinal;
 
-
+		for (numeroInicio = 2; numeroInicio <numeroFinal; numeroInicio++) {
+			if (numeroInicio == 2 | numeroInicio == 3 | numeroInicio == 5 | numeroInicio == 7) {
+				cout << numeroInicio << " é primo" << endl;
+			}
+			if (numeroInicio % 2 != 0 && numeroInicio % 3 != 0 && numeroInicio % 5 != 0 && numeroInicio % 7 != 0) {
+				cout << numeroInicio << " é primo" << endl;
+			}
+		}
 
 #pragma endregion
+
+#pragma region Exc 7
+
+#pragma endregion 
+
 
 
 
