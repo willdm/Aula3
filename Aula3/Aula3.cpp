@@ -162,9 +162,9 @@ int main(){
 	//A quantidade de números ímpares contidos no array;
 	//Todos os números pares contidos no array.
 
-	srand(time(NULL));
+	/*srand(time(NULL));
 	int mv, imv, qtdimp = 0, qtdpares = 0, vet[50];
-	int op;
+	char op;
 		for (int c = 0; c < 50; c++) {
 			vet[c] = rand() % 100;
 			cout << vet[c] << "	";
@@ -189,35 +189,118 @@ int main(){
 
 		cin >> op;
 		switch (op){
-		case 1:
+		case '1':
 			cout << "O menor valor contido no array é : " << mv << endl;
 			break;
-		case 2:
+		case '2':
 			cout << "O índice do menor valor contido no array é : " << imv << endl;
 			break;
-		case 3:
+		case '3':
 			cout << "A quantidade de números ímpares contidos no array é : " << qtdimp << endl;
 			break;
-		case 4:
+		case '4':
 			cout << "Todos os números pares contidos no array é : " << qtdpares << endl;
 			break;
 		default:
 			break;
-		}
+		}*/
 #pragma endregion
 
 #pragma region Exc 11
 	//Faça um algoritmo que preencha uma matriz 3x3 de números inteiros com um valor digitado pelo usuário em todas as posições e exiba a matriz
-	/*int colun, line, n = 3;
-	cout << "Preencha uma matriz de 3X3";
-
-	for (colun = 0; colun < n; colun++) {
-		for (line = 0; line < n; line++) {
-			cin >> line[];
+	/*int colun, line,matriz[3][3];
+	cout << "Preencha uma matriz de 3X3" << endl;
+	
+	for (line = 0; line < 3; line++) {
+		for (colun = 0; colun < 3; colun++) {	
+			cin >> matriz[line][colun];
 		}
+	}
+
+	for (line = 0; line < 3; line++) {
+		for (colun = 0; colun < 3; colun++) {
+			cout << matriz[line][colun] << "|";
+		}cout << endl;
 	}*/
 #pragma endregion
 
+#pragma region Exc 12
+	//Faça um algoritmo que prenncha uma matriz 6X6 de numeros inteiros com 1 em todas as posiçoes da diagonal principal e com o valor zero nas demais pocições:
+//int colun, line, matriz[6][6] = { 0 };
+//	
+//	for (line = 0; line < 6; line++) {
+//		for (colun = 0; colun < 6; colun++) {
+//			if (line == colun) {
+//				matriz[line][colun] = 1;
+//			}
+//			else{
+//				matriz[line][colun] = 0;
+//			}
+//			cout << matriz[line][colun] << "|";
+//		}cout << endl;
+//	}
+#pragma endregion
+
+#pragma region Exc 13
+//Faça um algoritmo que sorteie 15 valores reais(entre 0 e 500), armazene - os em uma matriz 3x5 e exiba a matriz.Depois disso,
+//troque todos os elementos da matriz que sejam maiores do que 100 pelo valor zero e exiba matriz novamente.
+
+	//srand(time(NULL));
+	//int colun, line;
+	//double mat[3][5];
+
+	//for (line = 0; line < 5; line++) {
+	//	for (colun = 0; colun < 3; colun++) {
+	//		mat[colun][line] = rand() % 500;
+	//	}
+	//}
+	//cout << "Segue Matriz Sorteada: " << endl;
+	//for (line = 0; line < 5; line++) {
+	//	for (colun = 0; colun < 3; colun++) {
+	//		cout << mat[colun][line] << "|";
+	//	}cout << endl;
+	//}
+	//
+	//cout << "Segue matriz alterada: " << endl;
+	//for (line = 0; line < 5; line++) {
+	//	for (colun = 0; colun < 3; colun++) {
+	//		if (mat[colun][line] > 100) {
+	//			mat[colun][line] = 0;
+	//		}
+	//		cout << mat[colun][line] << "|";
+	//	}cout << endl;
+	//}
+#pragma endregion
+
+#pragma region Exc 14
+//Preencha uma matriz 5x5 com números aleatórios(entre 0 e 100) e exiba a matriz.A seguir, 
+//crie um vetor de 5 posições preenchido com os elementos da diagonal principal da matriz e exiba o vetor.
+	//srand(time(NULL));
+	//int colun, line, mat[5][5], vet[5];
+
+	//for (line = 0; line < 5; line++) {
+	//	for (colun = 0; colun < 5; colun++) {
+	//		mat[colun][line] = rand() % 100;
+	//		cout << mat[colun][line] << "|";
+	//		if (line == colun) {
+	//			vet[line] = mat[colun][line];
+	//		}
+	//	}cout << endl;
+	//}
+	//cout << endl;
+	//for (line = 0; line < 5; line++) {
+	//	cout << vet[line] << "|";
+	//}cout << endl;
+#pragma endregion
+
+#pragma region Exc 15
+//Quais seriam os passos necessários para criar um jogo da velha em c++ ?
+//Como seria a melhor forma de dividir o projeto pensando em mudar a forma como os resultados são exibidos para o usuário ? 
+//Considerando um projeto em equipe, qual seria sua estratégia para começar o jogo da velha ?
+
+
+
+#pragma endregion
     return 0;
 }
 
